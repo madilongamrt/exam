@@ -1,0 +1,41 @@
+package model;
+
+import java.util.Date;
+
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+@ManagedBean(name = "student")
+@SessionScoped
+public class Student {
+	
+	private String FirstName;
+	private String LastName;
+	private Date DateOfBirth;
+	
+	public String getFirstName() {
+		return FirstName;
+	}
+	public void setFirstName(String firstName) {
+		FirstName = firstName;
+	}
+	public String getLastName() {
+		return LastName;
+	}
+	public void setLastName(String lastName) {
+		LastName = lastName;
+	}
+	public Date getDateOfBirth() {
+		return DateOfBirth;
+	}
+	public void setDateOfBirth(Date dateOfBirth) {
+		DateOfBirth = dateOfBirth;
+	}
+	
+	
+	
+	
+	
+
+}

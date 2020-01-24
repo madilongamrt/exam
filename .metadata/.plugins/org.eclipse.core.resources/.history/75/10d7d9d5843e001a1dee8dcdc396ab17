@@ -1,0 +1,40 @@
+package controller;
+
+
+import javax.ejb.EJB;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ManagedProperty;
+import javax.faces.bean.SessionScoped;
+
+import model.Student;
+import service.StudentEJB;
+
+@ManagedBean(name = "studentcontroller")
+@SessionScoped
+public class StudentController {
+
+	@EJB
+	StudentEJB studentservice;
+	
+	
+	@ManagedProperty(value= "#{student}")
+	private Student student;
+	
+	
+	
+	public Student getStudent() {
+		return student;
+	}
+
+
+
+	public void setStudent(Student student) {
+		this.student = student;
+	}
+
+
+	public void addNewStudent() {
+		System.out.println("--------is in use---------");
+		studentservice.addNew(studentEntity);
+	}
+}

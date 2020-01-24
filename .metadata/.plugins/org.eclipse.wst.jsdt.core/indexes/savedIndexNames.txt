@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/Users/rudzanitrevor/eclipse-workspace/project_exam/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3056982206.index
+3002067392.index
+369588097.index
+737609894.index
+4091825599.index
+2970570463.index
+2081796142.index
